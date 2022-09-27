@@ -1,0 +1,302 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Capacitor
+#
+DEF Capacitor C 0 40 Y Y 1 F N
+F0 "C" 0 120 50 H V C CNN
+F1 "Capacitor" 10 -125 50 H V C CNN
+F2 "" -190 -110 50 H I C CNN
+F3 "" -190 -110 50 H I C CNN
+DRAW
+A -60 0 50 901 -901 1 1 8 N -60 50 -60 -50
+A 60 0 50 -899 899 1 1 8 N 60 -50 60 50
+P 2 1 1 8 -60 -50 60 -50 N
+P 2 1 1 8 -60 50 60 50 N
+X ~ 1 -210 0 100 R 50 50 1 1 P
+X ~ 2 210 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Capacitor_alt
+#
+DEF Capacitor_alt C 0 40 Y Y 1 F N
+F0 "C" 0 120 50 H V C CNN
+F1 "Capacitor_alt" 10 -125 50 H V C CNN
+F2 "" -190 -110 50 H I C CNN
+F3 "" -190 -110 50 H I C CNN
+DRAW
+S -50 50 50 -50 0 1 8 N
+X ~ 1 -150 0 100 R 50 50 1 1 P
+X ~ 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Cylinder_bellows
+#
+DEF Cylinder_bellows M 0 40 Y Y 1 F N
+F0 "M" 0 420 50 H V C CNN
+F1 "Cylinder_bellows" 30 -415 50 H V C CNN
+F2 "" -190 -110 50 H I C CNN
+F3 "" -190 -110 50 H I C CNN
+DRAW
+A -10 0 94 -1480 1480 0 1 8 N -90 -50 -90 50
+A 10 0 94 320 -320 1 1 8 N 90 50 90 -50
+P 2 0 1 8 -110 -50 110 -50 N
+P 2 0 1 8 -110 50 110 50 N
+X ~ 1 0 150 100 D 50 50 1 1 P
+X ~ 2 0 -150 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Cylinder_muscle
+#
+DEF Cylinder_muscle M 0 40 Y Y 1 F N
+F0 "M" 0 120 50 H V C CNN
+F1 "Cylinder_muscle" 10 -125 50 H V C CNN
+F2 "" -190 -110 50 H I C CNN
+F3 "" -190 -110 50 H I C CNN
+DRAW
+A -10 0 94 -1480 1480 0 1 8 N -90 -50 -90 50
+A 10 0 94 320 -320 1 1 8 N 90 50 90 -50
+P 2 0 1 8 -110 50 -110 -50 N
+P 2 0 1 8 -90 -50 90 -50 N
+P 2 0 1 8 -90 50 90 50 N
+P 2 0 1 8 110 50 110 -50 N
+X ~ 1 -210 0 100 R 50 50 1 1 P
+X ~ 2 210 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Flow_gauge
+#
+DEF Flow_gauge U 0 40 Y Y 1 F N
+F0 "U" 0 120 50 H V C CNN
+F1 "Flow_gauge" 20 -460 50 H V C CNN
+F2 "" -190 -200 50 H I C CNN
+F3 "" -190 -200 50 H I C CNN
+DRAW
+A 0 110 86 -1255 -545 0 1 0 N -50 40 50 40
+A 0 -110 86 545 1255 1 1 0 N 50 -40 -50 -40
+C 0 0 67 0 1 8 N
+X ~ 1 0 -170 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Motor_Hydraulic
+#
+DEF Motor_Hydraulic M 0 40 Y Y 1 F N
+F0 "M" 130 145 50 H V C CNN
+F1 "Motor_Hydraulic" 400 -175 50 H V C CNN
+F2 "" 190 -180 50 H I C CNN
+F3 "" 190 -180 50 H I C CNN
+DRAW
+C 0 -10 128 1 1 10 f
+P 2 1 1 0 0 -250 0 -230 N
+P 2 1 1 0 0 -138 0 -154 N
+P 2 1 1 0 0 120 0 132 N
+P 2 1 1 0 0 130 0 150 N
+P 5 1 1 6 -30 110 0 70 30 110 0 120 -30 110 F
+X ~ 1 0 250 100 D 50 50 1 1 P
+X ~ 2 0 -250 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Motor_Pneumatic
+#
+DEF Motor_Pneumatic M 0 40 Y Y 1 F N
+F0 "M" 130 145 50 H V C CNN
+F1 "Motor_Pneumatic" 420 -175 50 H V C CNN
+F2 "" 190 -180 50 H I C CNN
+F3 "" 190 -180 50 H I C CNN
+DRAW
+C 0 -10 128 1 1 10 f
+P 2 1 1 0 0 -250 0 -230 N
+P 2 1 1 0 0 -138 0 -154 N
+P 2 1 1 0 0 120 0 132 N
+P 2 1 1 0 0 130 0 150 N
+P 3 1 1 6 -30 110 0 70 30 110 N
+X ~ 1 0 250 100 D 50 50 1 1 P
+X ~ 2 0 -250 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Pressure_gauge
+#
+DEF Pressure_gauge U 0 40 Y Y 1 F N
+F0 "U" 0 120 50 H V C CNN
+F1 "Pressure_gauge" 20 -460 50 H V C CNN
+F2 "" -190 -200 50 H I C CNN
+F3 "" -190 -200 50 H I C CNN
+DRAW
+C 0 0 67 0 1 8 N
+P 2 0 1 8 -30 30 -30 0 N
+P 2 0 1 8 -30 30 0 30 N
+P 2 0 1 8 30 -30 -30 30 N
+X ~ 1 0 -170 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Pressure_regulator
+#
+DEF Pressure_regulator U 0 40 Y Y 1 F N
+F0 "U" 0 290 50 H V C CNN
+F1 "Pressure_regulator" 40 -105 50 H V C CNN
+F2 "" -190 -110 50 H I C CNN
+F3 "" -190 -110 50 H I C CNN
+DRAW
+A 0 110 60 1 1799 0 1 8 N 60 110 -60 110
+P 2 0 1 8 -60 110 60 110 N
+P 2 0 1 8 0 0 0 110 N
+P 5 0 1 8 0 170 0 210 100 210 100 110 0 0 N
+P 4 1 1 8 -100 -50 -100 50 0 0 -100 -50 N
+P 4 1 1 8 100 50 100 -50 0 0 100 50 N
+X ~ 1 -200 0 100 R 50 50 1 1 P
+X ~ 2 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Pump_Hydraulic
+#
+DEF Pump_Hydraulic M 0 40 Y Y 1 F N
+F0 "M" 130 145 50 H V C CNN
+F1 "Pump_Hydraulic" 400 -175 50 H V C CNN
+F2 "" 315 -175 50 H I C CNN
+F3 "" 315 -175 50 H I C CNN
+DRAW
+C 0 -10 128 1 1 10 f
+P 4 0 1 0 0 110 -30 70 30 70 0 110 F
+P 2 1 1 0 0 -250 0 -230 N
+P 2 1 1 0 0 -138 0 -154 N
+P 2 1 1 0 0 120 0 132 N
+P 2 1 1 0 0 130 0 150 N
+X ~ 1 0 250 100 D 50 50 1 1 P
+X ~ 2 0 -250 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Pump_Pneumatic
+#
+DEF Pump_Pneumatic M 0 40 Y Y 1 F N
+F0 "M" 130 145 50 H V C CNN
+F1 "Pump_Pneumatic" 420 -175 50 H V C CNN
+F2 "" 190 -180 50 H I C CNN
+F3 "" 190 -180 50 H I C CNN
+DRAW
+C 0 -10 128 1 1 10 f
+P 4 0 1 0 0 110 -30 70 30 70 0 110 N
+P 2 1 1 0 0 -250 0 -230 N
+P 2 1 1 0 0 -138 0 -154 N
+P 2 1 1 0 0 120 0 132 N
+P 2 1 1 0 0 130 0 150 N
+X ~ 1 0 250 100 D 50 50 1 1 P
+X ~ 2 0 -250 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Pump_Vacuum
+#
+DEF Pump_Vacuum M 0 40 Y Y 1 F N
+F0 "M" 130 145 50 H V C CNN
+F1 "Pump_Vacuum" 370 -175 50 H V C CNN
+F2 "" 140 -180 50 H I C CNN
+F3 "" 140 -180 50 H I C CNN
+DRAW
+C 0 -10 128 1 1 10 f
+P 2 0 1 8 -20 110 -70 -110 N
+P 2 0 1 8 20 110 70 -110 N
+P 2 1 1 0 0 -250 0 -230 N
+P 2 1 1 0 0 -138 0 -154 N
+P 2 1 1 0 0 120 0 132 N
+P 2 1 1 0 0 130 0 150 N
+X ~ 1 0 250 100 D 50 50 1 1 P
+X ~ 2 0 -250 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Resistor
+#
+DEF Resistor R 0 40 Y Y 1 F N
+F0 "R" 130 30 50 H V C CNN
+F1 "Resistor" 255 -40 50 H V C CNN
+F2 "" -190 -110 50 H I C CNN
+F3 "" -190 -110 50 H I C CNN
+DRAW
+P 2 1 1 0 0 -75 0 -85 N
+P 2 1 1 0 0 105 0 115 N
+P 5 1 1 0 0 -15 40 -30 0 -45 -40 -60 0 -75 N
+P 5 1 1 0 0 45 40 30 0 15 -40 0 0 -15 N
+P 5 1 1 6 0 105 40 90 0 75 -40 60 0 45 N
+X ~ 1 0 165 50 D 50 50 1 1 P
+X ~ 2 0 -135 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Resistor_variable
+#
+DEF Resistor_variable R 0 40 Y Y 1 F N
+F0 "R" 130 30 50 H V C CNN
+F1 "Resistor_variable" 425 -40 50 H V C CNN
+F2 "" -190 -110 50 H I C CNN
+F3 "" -190 -110 50 H I C CNN
+DRAW
+P 2 1 1 0 0 -75 0 -85 N
+P 2 1 1 0 0 105 0 115 N
+P 5 1 1 0 0 -15 40 -30 0 -45 -40 -60 0 -75 N
+P 5 1 1 0 0 45 40 30 0 15 -40 0 0 -15 N
+P 5 1 1 6 0 105 40 90 0 75 -40 60 0 45 N
+P 5 1 1 6 90 75 100 115 60 105 100 115 -80 -65 N
+X ~ 1 0 165 50 D 50 50 1 1 P
+X ~ 2 0 -135 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Valve_check
+#
+DEF Valve_check SW 0 40 Y Y 1 F N
+F0 "SW" 0 110 50 H V C CNN
+F1 "Valve_check" 40 -105 50 H V C CNN
+F2 "" -190 -110 50 H I C CNN
+F3 "" -190 -110 50 H I C CNN
+DRAW
+P 2 0 1 8 55 50 55 0 N
+P 2 1 1 8 55 0 55 -50 N
+P 4 1 1 8 -45 -50 -45 50 55 0 -45 -50 N
+X ~ 1 -145 0 100 R 50 50 1 1 P
+X ~ 2 155 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Valve_generic
+#
+DEF Valve_generic SW 0 40 Y Y 1 F N
+F0 "SW" 0 110 50 H V C CNN
+F1 "Valve_generic" 40 -105 50 H V C CNN
+F2 "" -190 -110 50 H I C CNN
+F3 "" -190 -110 50 H I C CNN
+DRAW
+P 4 1 1 8 -100 -50 -100 50 0 0 -100 -50 N
+P 4 1 1 8 100 50 100 -50 0 0 100 50 N
+X ~ 1 -200 0 100 R 50 50 1 1 P
+X ~ 2 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Valve_three-way
+#
+DEF Valve_three-way SW 0 40 Y Y 1 F N
+F0 "SW" 0 110 50 H V C CNN
+F1 "Valve_three-way" 30 -470 50 H V C CNN
+F2 "" -190 -110 50 H I C CNN
+F3 "" -190 -110 50 H I C CNN
+DRAW
+P 4 1 1 8 -100 -50 -100 50 0 0 -100 -50 N
+P 4 1 1 8 50 -100 -50 -100 0 0 50 -100 N
+P 4 1 1 8 100 50 100 -50 0 0 100 50 N
+X ~ 1 -200 0 100 R 50 50 1 1 P
+X ~ 2 0 -200 100 U 50 50 1 1 P
+X ~ 2 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
