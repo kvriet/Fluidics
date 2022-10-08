@@ -30,7 +30,7 @@ cross_section = true;
 */
 
 // CALCULATED VARIABLES
-PI = 3.1416;
+PI = 3.1416;            // Good enough and faster
 volume_m3 = volume*1000;
 radius_inner = ((3*volume_m3) / (4*PI))^(1/3);
 radius_outer = radius_inner + wall_thickness;
