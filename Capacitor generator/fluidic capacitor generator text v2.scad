@@ -1,4 +1,5 @@
 // Fluidic Capacitor generator - by C.M. van Riet
+// This file can be opened in OpenSCAD - openscad.org
 // Version 1 - Oct 2022
 
 // VARIABLES
