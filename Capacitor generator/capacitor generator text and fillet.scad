@@ -8,6 +8,7 @@ stem_ID = 3;            // [mm]
 text_size = 4;
 
 cross_section = false;
+support = true;         // Can be adjusted below under SUPPORT
 
 /*  E12 SERIES
     10
@@ -32,18 +33,22 @@ radius_inner = ((3*volume_m3) / (4*PI))^(1/3);
 radius_outer = radius_inner + wall_thickness;
 cross_section_size = 1000;
 
-/*
-radius_inner = 10;
-wall_thickness = 2;
-radius_outer = radius_inner + wall_thickness;
-stem_OD = 6;
-stem_ID = 3;
-stem_length = 20;
-*/
+// SUPPORT
+support_height = 6;
+support_diam = 12;
 
+module support(){
+    if (support){
+        translate([0,0,radius_outer-support_height])
+        difference(){
+            cylinder(h = support_height, r = support_diam);
+            translate([0,0,-0.005,])
+            cylinder(h = support_height+0.01, r = support_diam-2);
+        }
+    }
+}
 
-radius_fillet = 10;
-
+radius_fillet = 12;
 
 qx = -stem_OD/2;
 qy = -sqrt((radius_fillet+radius_outer)^2 - (radius_fillet+stem_OD/2)^2);
@@ -54,7 +59,11 @@ o = tan(54)*(px - stem_OD);
 
 
 difference(){
-    rotate_extrude(angle = 360, $fn=40) 2D();
+    union(){
+        rotate_extrude(angle = 360, $fn=40) 2D();
+        translate([0,radius_outer,0]) volume_text();
+        support();
+    }
     
     if (cross_section){
         translate([-500,0,-500])
@@ -62,10 +71,7 @@ difference(){
     }
 }
 
-translate([0,radius_outer,0]) volume_text();
-
 //2D();
-
 
 module 2D(){
     difference(){
