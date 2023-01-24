@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 74)
+    (drawings 73)
     (tracks 110)
     (zones 0)
     (modules 135)
@@ -5125,10 +5125,7 @@
     )
   )
 
-  (gr_text "trimpot\nbypass" (at 2 60.4 90) (layer F.SilkS) (tstamp 63CDA191)
-    (effects (font (size 0.8 0.8) (thickness 0.1)))
-  )
-  (gr_text "solder\nfor 555 \ncontrol" (at 16.4 40.9) (layer F.SilkS)
+  (gr_text "solder here\nfor 555 \ncontrol" (at 16.4 40.9) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.1)))
   )
   (gr_text G (at 28.7 63.2) (layer B.SilkS) (tstamp 63BE8321)
