@@ -1,3 +1,20 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Flag
+D Flag
+F ~
+$ENDCMP
+#
+$CMP Q_NPN
+D NPN transistor, base/collector/emitter
+K transistor NPN
+F ~
+$ENDCMP
+#
+$CMP Q_PNP
+D PNP transistor, base/collector/emitter
+K transistor PNP
+F ~
+$ENDCMP
+#
 #End Doc Library
